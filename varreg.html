@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="var3.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Poppins?query=poppin">
+	<title></title>
+</head>
+<body>
+	<div class="main">
+		<div class="main__logo">
+			<img src="logo.png" alt="">
+		</div>
+		<div class="main__body">
+			<div class="main-body__block" height="500">
+				<div class="main-body-text">
+					<div class="main-body-text__title">
+						<h2>Welcome!</h2>
+					</div>
+					<div class="main-body-text__title_bold">
+						<h2>Sign on to</h2>
+					</div>
+					<div class="main-body-text__subtitle">
+						<h5>Enjoy with us!</h5>
+					</div>
+				</div>
+				<div class="main-body__forms">
+					<form action="index.html" class="main-body-login">
+						<div class="txtb">
+							<input type="text" name="username" class="username" placeholder="Enter your name">
+						</div>
+						<div class="txtb">
+							<input type="email" name="email" class="email" placeholder=" Email">
+						</div>
+						<div class="txtb">
+							<input type="password" name="password" class="password" placeholder="Enter your password">
+						</div>
+						<div class="txtb">
+							<input type="password" name="password" class="confirmpass" placeholder="Confirm your password">
+						</div>
+						<div class="part4">
+							<div class="checkbox">
+								<input type="checkbox" name="checkbox"  checked>
+								<label for="remember">Remember me</label>
+							</div>
+							<div class="forgotp">
+								<label for="forgotp">Forgot password?</label>
+							</div>
+						</div>
+						
+						<div class="part">
+							<input type="submit" name="btn" class="btn-log" value="Register">
+						</div>
+					</div>
+				</div>
+				<div class="illustration">
+					<img id="illustration" src="pana.png" alt="" width="550" height="600">
+			    </div>
+			</div>
+			
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+	$(".btn-log").click( function() {
+    alert("You are successfully registred!");
+});
+	$(".part input").on("focus", function(){
+		$(this).addClass("focus");
+	});
+	$(".part input").on("blur", function(){
+		if($(this).val() == "")
+		$(this).removeClass("focus");
+	});
+	// $( "#illustration" ).animate({
+ //    width: [ "toggle", "swing" ],
+ //    height: [ "toggle", "swing" ],
+ //    opacity: "toggle"
+ //  }, 5000, "linear");
+//  $( "#illustration" ).animate({
+//   height: "toggle",
+//   opacity: "toggle"
+// }, {
+//   duration: "slow"
+// });
+//  $( "#illustration" ).animate({
+//   opacity: "show"
+// }, {
+//   duration: "slow",
+//   easing: "easein"
+// });
+// $( "#illustration" ).animate({
+//   left: "50px",
+//   opacity: 1
+// }, {
+//   duration: 500,
+//   queue: false
+// });
+
+
+</script>
+</body>
+</html>
