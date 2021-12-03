@@ -1,0 +1,95 @@
+a{
+	font-family: Caveat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 63px;
+}
+ul{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	float: right;
+	padding: 10px;
+
+}
+li a{
+	padding: 15px;
+	text-decoration: none;
+	font-family: Arial		;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 
+}
+#nav{
+	border-radius: 0 0 40px;
+}
+.content{
+	margin-left: 50px;
+	margin-top: 200px;
+}
+h3{
+	font-weight: bolder;
+
+}
+.button{
+	margin-top: 50px;
+	display: flex;
+}
+#hire{
+	box-shadow: 2px 2px 5px #434142;
+
+}
+#down{
+	box-shadow: 2px 2px 5px #434142;
+	margin-left: 20px;
+	font-size:16px;
+	text-decoration-style: none;
+	color: white;
+}
+.photo{
+	position:absolute;
+	top: 120px;
+	right: 250px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #434142;
+	animation: zoomin 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomin{
+    0%{
+        transform:scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform:scale(1);
+        visibility: visible;
+    }
+}
+
+.right img{
+	display: block;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.right{
+	float: right;
+	margin-top: 110px;
+	animation-duration: 3s;
+    animation-name: slidein;
+    
+}
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 110px;
+    
+  }
+}
+
+
